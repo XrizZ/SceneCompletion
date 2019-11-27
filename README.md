@@ -168,27 +168,23 @@ Other methods were proposed to solve the problem of scene completion. Find below
 </table>
 	
 ## Complexity
-Computing GIST descriptors
 
-f(p) \in O(p) , p - pixels in image
+In O-Notation.
 
-Searching image database
+### Computing GIST descriptors
+O(p) , p - pixels in image
 
-f(i) \in O(i) , i - number of images
+### Searching image database
+O(i) , i - number of images
 
-Graph Cut
-
-f(m,n) \in O(m*n^2) , n - nodes, m - edges in graph, n = p, m = 2*p
--> f(p) \in O(2*p^3) , p - pixels in image
+### Graph Cut:
+O(m*n^2) , n - nodes, m - edges in graph, n = p, m = 2*p -> O(2*p^3) , p - pixels in image
 
 An Experimental Comparison of Min-Cut/Max-Flow Algorithms for Energy Minimization in Vision
 (Yuri Boykov and Vladimir Kolmogorov)
 http://www.csd.uwo.ca/~yuri/Papers/pami04.pdf
 
-Poisson Blending
-
-complexity of gaussian elimination: f(n) \in O(n^3) , n - matrix dimension
-	our matrix dimension is: 3*(pixels in mask)
-	-> f(p) \in O(3*c*p^3) , c = (mask pixels) / (image pixels) <- constant, p - image pixels
-
+### Poisson Blending
+complexity of gaussian elimination: O(n^3) , n - matrix dimension
+our matrix dimension is: 3*(pixels in mask) -> O(3*c*p^3) , c = (mask pixels) / (image pixels) <- constant, p - image pixels
 http://en.wikipedia.org/wiki/Gaussian_elimination
