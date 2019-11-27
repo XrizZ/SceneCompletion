@@ -30,7 +30,7 @@ The figure below shows one of the results we produced, for more please refer to 
 The following figure shows the proposed algorithm from a high level view. In order to find suitable candidates for insertion, we look up similar images in a large pre-processed image database, but use only descriptors of the images to compare them, rather than the pixel information themselves. Due to the massive amount of data being processed, pre-calculation of the almost 1.5M images is inevitable.
 
 <img src="Documentation/img/overview.png" />
-Figure 2: High Level Overview of Algorithm
+Figure 2: High Level Overview of Algorithm<br>
 
 Once a good match for the input image has been found, the paper suggests that the best fit is being calculated. This is done by altering the scale, rotation and translation of the similar image and comparing it with the input image at the mask's position. After that the image is aligned properly we can then use a graph cut algorithm to improve the mask in a way that it falls into areas for which the gradients of the two images to be combined are as similar as possible. This will later result in a smooth transition when blending the images. Once the improved mask is available, the input image is merged with the candidate using Poisson blending.
 
@@ -49,7 +49,6 @@ With these improvements, we were able to achieve the following results:
 <TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
 <tbody>
 <tr>
-<td><a href="Documentation/images/gasse.png"><img src="Documentation/images/gasse.png" width="250" /></a> Input Image</td>
 <td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="250" /></a> Hays result</td>
 <td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="250" /></a> Our result</td>
 </tr>
@@ -63,7 +62,7 @@ The software was coded in C++ and extensively uses OpenCV to do image processing
 ## GIST
 
 <img src="Documentation/img/gist.png" />
-Figure 1: 6x6 tile Layout of GIST Descriptor
+Figure 1: 6x6 tile Layout of GIST Descriptor<br>
 
 Searching a database of millions of images is quite an effort. On the one hand, hundreds of gigabytes need to be read
 which already takes a lot of time, depending on the medium they are saved on. Also comparing images to one another
@@ -76,11 +75,9 @@ afterwards summed up to give us a single value describing the similarity between
 the GIST descriptors are not going to change over time. This is why it is reasonable to pre-calculate them to be able to just read them
 again when they are needed.
 
-Our GIST algorithm uses only greyscale information about the images. It doesn't care about colors.
+Our GIST algorithm uses only greyscale information about the images. It doesn't care about colors, as we found that it did not impact the results in a significant positive manner.
 	
-Building the big database took about 49 hours on a modern CPU with 4 cores.
-However, browsing the database for similarities with an input image takes only about 7 minutes.
-
+Building the big database took about 49 hours on a modern CPU(from 2012) with 4 cores. However, browsing the database for similarities with an input image takes only about 7 minutes.
 	
 ## Best Fit
 
@@ -88,9 +85,8 @@ The original algorithm, proposed in the paper, suggests to calculate the best fi
 
 ## Graph Cut
 
-<div class="imagebox left_side">
-<img src="img/graphcut.png" />
-Figure 2: left: Input Mask; right: Refined Mask after Graph Cut
+<img src="Documentation/img/graphcut.png" />
+Figure 2: left: Input Mask; right: Refined Mask after Graph Cut<br>
 
 When a candidate for blending has been found, we improve the input mask using a graph cut algorithm. The input mask already covers the areas of the input image that the user specified. But the edges of the mask are not necessarily the best seams to stitch the images. In case the gradients of both images are very different to each other, two very semantically different areas may be stitched together. In order to reduce that risk, we allow the mask to leave from its original path and find its place some pixel lengths further if that helps to make the subsequent blending appear more plausible.<br/>
 
@@ -112,70 +108,34 @@ On this page, we present our results. We picked some of the good and bad results
 
 In many cases, the algorithm gave us beautiful results that were sometimes hard to distinguish from real photographs. Especially with natural landscapes, the seamless blending combined with the optimized mask really does its job.
 
-<div class="imagebox">
-	<a href="img/IMG_0908.jpg"><img src="img/IMG_0908_t.jpg" /></a>
-	input
-</div>
+<a href="Documentation/img/IMG_0908.jpg"><img src="Documentation/img/IMG_0908_t.jpg" /></a>
+input<br>
 
-<div class="imagebox">
-  <a href="img/IMG_0908_mask.png"><img src="img/IMG_0908_mask_t.png" /></a>
-  mask
-</div>
+<a href="img/IMG_0908_mask.png"><img src="img/IMG_0908_mask_t.png" /></a>
+mask<br>
 
-<div class="imagebox">
-  <a href="img/results/img_0908/result1.jpg"><img src="img/img_0908_1_t.jpg" /></a>
-</div>
-
-<div class="imagebox">
-  <a href="img/results/img_0908/result10.jpg"><img src="img/img_0908_10_t.jpg" /></a>
-</div>
-
-<div class="imagebox">
-  <a href="img/results/img_0908/result11.jpg"><img src="img/img_0908_11_t.jpg" /></a>
-</div>
+<a href="img/results/img_0908/result1.jpg"><img src="img/img_0908_1_t.jpg" /></a>
+<a href="img/results/img_0908/result10.jpg"><img src="img/img_0908_10_t.jpg" /></a>
+<a href="img/results/img_0908/result11.jpg"><img src="img/img_0908_11_t.jpg" /></a>
 	
-<div class="imagegroup">
-  <div class="imagebox">
-    <a href="img/white_house.jpg"><img src="img/white_house_t.jpg" /></a>
-    input
-  </div>
-  <div class="imagebox">
-    <a href="img/white_house_mask.png"><img src="img/white_house_mask_t.png" /></a>
-    mask
-  </div>
-  <div class="imagebox">
-    <a href="img/white_house_india.jpg"><img src="img/white_house_india_t.jpg" /></a>
-  </div>
-  <div class="imagebox">
-    <a href="img/white_house_flood.jpg"><img src="img/white_house_flood_t.jpg" /></a>
-  </div>
-  <div class="imagebox">
-    <a href="img/white_house_schilf.jpg"><img src="img/white_house_schilf_t.jpg" /></a>
-  </div>
-</div>
+<a href="img/white_house.jpg"><img src="img/white_house_t.jpg" /></a>
+input<br>
+<a href="img/white_house_mask.png"><img src="img/white_house_mask_t.png" /></a>
+mask<br>
 
-<div class="imagegroup">
-  <div class="imagebox">
-    <a href="img/IMG_6548.jpg"><img src="img/IMG_6548_t.jpg" /></a>
-    input
-  </div>
-  <div class="imagebox">
-    <a href="img/IMG_6548_mask.png"><img src="img/IMG_6548_mask_t.png" /></a>
-    mask
-  </div>
-  <div class="imagebox">
-    <a href="img/results/img_6548/result0.jpg"><img src="img/img_6548_0_t.jpg" /></a>
+<a href="img/white_house_india.jpg"><img src="img/white_house_india_t.jpg" /></a>
+<a href="img/white_house_flood.jpg"><img src="img/white_house_flood_t.jpg" /></a>
+<a href="img/white_house_schilf.jpg"><img src="img/white_house_schilf_t.jpg" /></a>
 
-  </div>
-  <div class="imagebox">
-    <a href="img/results/img_6548/result6.jpg"><img src="img/img_6548_6_t.jpg" /></a>
+<a href="img/IMG_6548.jpg"><img src="img/IMG_6548_t.jpg" /></a>
+input<br>
 
-  </div>
-  <div class="imagebox">
-    <a href="img/results/img_6548/result9.jpg"><img src="img/img_6548_9_t.jpg" /></a>
-
-  </div>
-</div>
+<a href="img/IMG_6548_mask.png"><img src="img/IMG_6548_mask_t.png" /></a>
+mask<br>
+ 
+<a href="img/results/img_6548/result0.jpg"><img src="img/img_6548_0_t.jpg" /></a>
+<a href="img/results/img_6548/result6.jpg"><img src="img/img_6548_6_t.jpg" /></a>
+<a href="img/results/img_6548/result9.jpg"><img src="img/img_6548_9_t.jpg" /></a>
 	
 ## Bad results
 When there are problems merging images, it has mostly to do with semantic errors. Big letters in the sky, a cow on a roof, a creek of water evolving into a stone wall &ndash; the human eye knows that those thing cannot exist. But as long as no semantic validation of the results is happening, those mistakes cannot be avoided. The GIST descriptor is already able to reduce the most serious flaws by only allowing images that have similar distributions of their edges all over the canvas. But the final check if the result really makes sense still remains unsolved.
