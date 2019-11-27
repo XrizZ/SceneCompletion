@@ -48,9 +48,9 @@ With these improvements, we were able to achieve the following results:
 <TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
 <tbody>
 <tr>
-<td><a href="Documentation/images/gasse.png"><img src="Documentation/images/gasse.png" width="300" /></a> Input Image</td>
-<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="300" /></a> Hays result</td>
-<td><a href="Documentation/images/gasse_result3.png"><Documentation/images/gasse_result3.png" width="300" /></a> Our result</td>
+<td><a href="Documentation/images/gasse.png"><img src="Documentation/images/gasse.png" width="250" /></a> Input Image</td>
+<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="250" /></a> Hays result</td>
+<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="250" /></a> Our result</td>
 </tr>
 </tbody>
 </table>
