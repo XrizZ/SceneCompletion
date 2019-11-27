@@ -142,7 +142,7 @@ When there are problems merging images, it has mostly to do with semantic errors
 <a href="Documentation/img/turm_fail.jpg"><img src="Documentation/img/turm_fail.jpg" width="400" /></a>
 <a href="Documentation/img/results/img_3072-01/result3.jpg"><img src="Documentation/img/results/img_3072-01/result3.jpg" width="400"/></a>
 <a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/results/img_1911/result12" width="400" /></a>
-<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/static_italy_city_outdoor_dsc00992/result4.jpg" width="400" /></a>
+<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg" width="400" /></a>
 	
 	
 ## Test set
