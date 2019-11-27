@@ -36,6 +36,19 @@ is merged with the candidate using Poisson blending.
 # Implementation
 
 The software was coded in C++ and extensively uses OpenCV to do image processing. To be able to run a whole set of images in a row, we added a batch script that doesn't rely on user interaction (we call this the retrieval framework). Further, as external libraries we've used: AMD, UMFPack, Eigen and graphcut - see the Dependencies folder for details on versions, etc.
+
+## Our Contribution
+
+From Hays et al. method we've made several improvements:
+- Poisson: border pixel from input or output? ->adaptively!
+- changed graph cut weighting inside mask
+- GIST on color
+- only GIST near mask
+- distributed implementation (retrieval and search separate)
+- suggestion: weighting the GISTs differently
+
+<img src="Documentation/images/gasse.png" width="350" />
+<img src="Documentation/images/gasse_result3.png" width="350" />
 	
 ## GIST
 
@@ -178,7 +191,7 @@ italy_city_outdoor_dsc00992_4_t.jpg" /></a>
 	
 	
 ## Test set
-<a href="Documentation\testset.html">Click here to see the whole test set results</a>
+To see the whole test set and results of it, see the Documentation/img/results folder.
 	
 # Comparison with other methods
 
