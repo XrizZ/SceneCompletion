@@ -47,8 +47,10 @@ From Hays et al. method we've made several improvements:
 - distributed implementation (retrieval and search separate)
 - suggestion: weighting the GISTs differently
 
-<img src="Documentation/images/gasse.png" width="350" />
-<img src="Documentation/images/gasse_result3.png" width="350" />
+With these improvements, we were able to achieve the following results:
+![Input Image](Documentation/images/gasse.png width="300" "Input Image")
+![Hays result](Documentation/images/car_hays.png width="300" "Our result")
+![Our result](Documentation/images/gasse_result3.png width="300" "Hays result")
 	
 ## GIST
 
