@@ -33,11 +33,7 @@ the mask in a way that it falls into areas for which the gradients of the two im
 This will later result in a smooth transition when blending the images. Once the improved mask is available, the input image 
 is merged with the candidate using Poisson blending.
 
-# Implementation
-
-The software was coded in C++ and extensively uses OpenCV to do image processing. To be able to run a whole set of images in a row, we added a batch script that doesn't rely on user interaction (we call this the retrieval framework). Further, as external libraries we've used: AMD, UMFPack, Eigen and graphcut - see the Dependencies folder for details on versions, etc.
-
-## Our Contribution
+# Our Contribution
 
 From Hays et al. method we've made several improvements:
 - Poisson: border pixel from input or output? ->adaptively!
@@ -48,9 +44,20 @@ From Hays et al. method we've made several improvements:
 - suggestion: weighting the GISTs differently
 
 With these improvements, we were able to achieve the following results:
-![Input Image](Documentation/images/gasse.png "Input Image")
-![Hays result](Documentation/images/car_hays.png "Our result")
-![Our result](Documentation/images/gasse_result3.png "Hays result")
+
+<TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
+<tbody>
+<tr>
+<td><a href="Documentation/images/gasse.png"><img src="Documentation/images/gasse.png" width="300" /></a> Input Image</td>
+<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="300" /></a> Hays result</td>
+<td><a href="Documentation/images/gasse_result3.png"><Documentation/images/gasse_result3.png" width="300" /></a> Our result</td>
+</tr>
+</tbody>
+</table>
+	
+# Implementation
+
+The software was coded in C++ and extensively uses OpenCV to do image processing. To be able to run a whole set of images in a row, we added a batch script that doesn't rely on user interaction (we call this the retrieval framework). Further, as external libraries we've used: AMD, UMFPack, Eigen and graphcut - see the Dependencies folder for details on versions, etc.
 	
 ## GIST
 
