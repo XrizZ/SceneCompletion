@@ -21,7 +21,7 @@ The figure below shows one of the results we produced, for more please refer to 
 <tbody>
 <tr>
 <td><a href="Documentation/images/gasse.png"><img src="Documentation/images/gasse.png" width="250" /></a> Input Image</td>
-<td><a href="Documentation/images/gasse_mask3.png"><img src="Documentation/images/car_hays.png" width="250" /></a> Input Mask</td>
+<td><a href="Documentation/images/gasse_mask3.png"><img src="Documentation/images/gasse_mask3.png" width="250" /></a> Input Mask</td>
 <td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="250" /></a> Our result</td>
 </tr>
 </tbody>
