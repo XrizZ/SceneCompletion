@@ -1,3 +1,5 @@
+Scene Completion using Millions of Photographs
+
 # Introduction
 
 This project contains the results and implementation details of
