@@ -139,10 +139,10 @@ input + mask
 When there are problems merging images, it has mostly to do with semantic errors. Big letters in the sky, a cow on a roof, a creek of water evolving into a stone wall &ndash; the human eye knows that those thing cannot exist. But as long as no semantic validation of the results is happening, those mistakes cannot be avoided. The GIST descriptor is already able to reduce the most serious flaws by only allowing images that have similar distributions of their edges all over the canvas. But the final check if the result really makes sense still remains unsolved.
 	
 
-<a href="Documentation/img/turm_fail.jpg"><img src="Documentation/img/turm_fail_t.jpg" width="400" /></a>
-<a href="Documentation/img/results/img_3072-01/result3.jpg"><img src="Documentation/img/img_3072_3_t.jpg" width="400"/></a>
-<a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/img_1911_12_t.jpg" width="400" /></a>
-<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/static_italy_city_outdoor_dsc00992_4_t.jpg" width="400" /></a>
+<a href="Documentation/img/turm_fail.jpg"><img src="Documentation/img/turm_fail.jpg" width="400" /></a>
+<a href="Documentation/img/results/img_3072-01/result3.jpg"><img src="Documentation/img/img_3072_3.jpg" width="400"/></a>
+<a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/img_1911_12.jpg" width="400" /></a>
+<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/static_italy_city_outdoor_dsc00992_4.jpg" width="400" /></a>
 	
 	
 ## Test set
