@@ -49,8 +49,8 @@ With these improvements, we were able to achieve the following results:
 <TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
 <tbody>
 <tr>
-<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="350" /></a> Hays result</td>
-<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="350" /></a> Our result</td>
+<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="400" /></a> Hays result</td>
+<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="400" /></a> Our result</td>
 </tr>
 </tbody>
 </table>
@@ -109,32 +109,32 @@ On this page, we present our results. We picked some of the good and bad results
 In many cases, the algorithm gave us beautiful results that were sometimes hard to distinguish from real photographs. Especially with natural landscapes, the seamless blending combined with the optimized mask really does its job.
 
 ### Example 1
-<a href="Documentation/img/IMG_0908.jpg"><img src="Documentation/img/IMG_0908_t.jpg" /></a>
-input<br>
+<a href="Documentation/img/IMG_0908.jpg"><img src="Documentation/img/IMG_0908_t.jpg" /></a><br>
+input
 
-<a href="Documentation/img/IMG_0908_mask.png"><img src="Documentation/img/IMG_0908_mask_t.png" /></a>
-mask<br>
+<a href="Documentation/img/IMG_0908_mask.png"><img src="Documentation/img/IMG_0908_mask_t.png" /></a><br>
+mask
 
 <a href="Documentation/img/results/img_0908/result1.jpg"><img src="Documentation/img/img_0908_1_t.jpg" /></a>
 <a href="Documentation/img/results/img_0908/result10.jpg"><img src="Documentation/img/img_0908_10_t.jpg" /></a>
 <a href="Documentation/img/results/img_0908/result11.jpg"><img src="Documentation/img/img_0908_11_t.jpg" /></a>
 
 ### Example 2
-<a href="Documentation/img/white_house.jpg"><img src="Documentation/img/white_house_t.jpg" /></a>
-input<br>
-<a href="Documentation/img/white_house_mask.png"><img src="Documentation/img/white_house_mask_t.png" /></a>
-mask<br>
+<a href="Documentation/img/white_house.jpg"><img src="Documentation/img/white_house_t.jpg" /></a><br>
+input
+<a href="Documentation/img/white_house_mask.png"><img src="Documentation/img/white_house_mask_t.png" /></a><br>
+mask
 
 <a href="Documentation/img/white_house_india.jpg"><img src="Documentation/img/white_house_india_t.jpg" /></a>
 <a href="Documentation/img/white_house_flood.jpg"><img src="Documentation/img/white_house_flood_t.jpg" /></a>
 <a href="Documentation/img/white_house_schilf.jpg"><img src="Documentation/img/white_house_schilf_t.jpg" /></a>
 
 ### Example 3
-<a href="Documentation/img/IMG_6548.jpg"><Documentation/img src="img/IMG_6548_t.jpg" /></a>
-input<br>
+<a href="Documentation/img/IMG_6548.jpg"><Documentation/img src="img/IMG_6548_t.jpg" /></a><br>
+input
 
-<a href="Documentation/img/IMG_6548_mask.png"><img src="Documentation/img/IMG_6548_mask_t.png" /></a>
-mask<br>
+<a href="Documentation/img/IMG_6548_mask.png"><img src="Documentation/img/IMG_6548_mask_t.png" /></a><br>
+mask
  
 <a href="Documentation/img/results/img_6548/result0.jpg"><img src="Documentation/img/img_6548_0_t.jpg" /></a>
 <a href="Documentation/img/results/img_6548/result6.jpg"><img src="Documentation/img/img_6548_6_t.jpg" /></a>
@@ -150,7 +150,7 @@ When there are problems merging images, it has mostly to do with semantic errors
 
 <a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/img_1911_12_t.jpg" /></a>
 
-<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><Documentation/img src="img/static_italy_city_outdoor_dsc00992_4_t.jpg" /></a>
+<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/static_italy_city_outdoor_dsc00992_4_t.jpg" /></a>
 	
 	
 ## Test set
