@@ -1,0 +1,19 @@
+{
+    "params":
+    {
+        "prefilter": "none",
+        "padding": "64",
+        "width": "256",
+        "height": "256",
+        "num_x_tiles": "4",
+        "num_y_tiles": "4",
+        "num_freqs": "4",
+        "num_orients": "6",
+        "max_peak_freq": "0.3",
+        "delta_freq_oct": "0.88752527",
+        "bandwidth_oct": "0.88752527",
+        "angle_factor": "1",
+        "polar": "true"
+    },
+    "name": "gist"
+}
