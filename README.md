@@ -109,32 +109,27 @@ On this page, we present our results. We picked some of the good and bad results
 In many cases, the algorithm gave us beautiful results that were sometimes hard to distinguish from real photographs. Especially with natural landscapes, the seamless blending combined with the optimized mask really does its job.
 
 ### Example 1
-<a href="Documentation/img/IMG_0908.jpg"><img src="Documentation/img/IMG_0908_t.jpg" /></a><br>
-input
-
+<a href="Documentation/img/IMG_0908.jpg"><img src="Documentation/img/IMG_0908_t.jpg" /></a>
 <a href="Documentation/img/IMG_0908_mask.png"><img src="Documentation/img/IMG_0908_mask_t.png" /></a><br>
-mask
+input + mask
 
 <a href="Documentation/img/results/img_0908/result1.jpg"><img src="Documentation/img/img_0908_1_t.jpg" /></a>
 <a href="Documentation/img/results/img_0908/result10.jpg"><img src="Documentation/img/img_0908_10_t.jpg" /></a>
 <a href="Documentation/img/results/img_0908/result11.jpg"><img src="Documentation/img/img_0908_11_t.jpg" /></a>
 
 ### Example 2
-<a href="Documentation/img/white_house.jpg"><img src="Documentation/img/white_house_t.jpg" /></a><br>
-input
+<a href="Documentation/img/white_house.jpg"><img src="Documentation/img/white_house_t.jpg" /></a>
 <a href="Documentation/img/white_house_mask.png"><img src="Documentation/img/white_house_mask_t.png" /></a><br>
-mask
+input + mask
 
 <a href="Documentation/img/white_house_india.jpg"><img src="Documentation/img/white_house_india_t.jpg" /></a>
 <a href="Documentation/img/white_house_flood.jpg"><img src="Documentation/img/white_house_flood_t.jpg" /></a>
 <a href="Documentation/img/white_house_schilf.jpg"><img src="Documentation/img/white_house_schilf_t.jpg" /></a>
 
 ### Example 3
-<a href="Documentation/img/IMG_6548.jpg"><Documentation/img src="img/IMG_6548_t.jpg" /></a><br>
-input
-
+<a href="Documentation/img/IMG_6548.jpg"><Documentation/img src="img/IMG_6548_t.jpg" /></a>
 <a href="Documentation/img/IMG_6548_mask.png"><img src="Documentation/img/IMG_6548_mask_t.png" /></a><br>
-mask
+input + mask
  
 <a href="Documentation/img/results/img_6548/result0.jpg"><img src="Documentation/img/img_6548_0_t.jpg" /></a>
 <a href="Documentation/img/results/img_6548/result6.jpg"><img src="Documentation/img/img_6548_6_t.jpg" /></a>
@@ -145,11 +140,8 @@ When there are problems merging images, it has mostly to do with semantic errors
 	
 
 <a href="Documentation/img/turm_fail.jpg"><img src="Documentation/img/turm_fail_t.jpg" /></a>
-
 <a href="Documentation/img/results/img_3072-01/result3.jpg"><img src="Documentation/img/img_3072_3_t.jpg" /></a>
-
 <a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/img_1911_12_t.jpg" /></a>
-
 <a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/static_italy_city_outdoor_dsc00992_4_t.jpg" /></a>
 	
 	
@@ -159,33 +151,21 @@ To see the whole test set and results of it, see the Documentation/img/results f
 # Comparison with other methods
 
 Other methods were proposed to solve the problem of scene completion. Find below a brief purely visual comparison of the most		prominent methods available. All methods are compared by using the same input and mask, as shown in the following figure. We picked the scene completion methods of Criminisi et al., Wilczowiak et al. as well as Microsofts Smart Erase tool. We found that the most striking results are those produced by the scene completion using millions of photographs.
-	
-<div class="imagegroup">
-  <div class="imagebox">
-    <a href="img/gasse.jpg"><img src="img/gasse_inputs_t.jpg" /></a>
-    input + mask
-  </div>
-  <div class="imagebox">
-    <a href="img/car_criminisi_et_al.jpg"><img src="img/car_criminisi_et_al_t.jpg" /></a>
-    Criminisi et al.
-  </div>
-  <div class="imagebox">
-    <a href="img/car_ms_smart_erase.jpg"><img src="img/car_ms_smart_erase_t.jpg" /></a>
-    MS Smart Erase
-  </div>
-  <div class="imagebox">
-    <a href="img/car_wilczkowiak_et_al.jpg"><img src="img/car_wilczkowiak_et_al_t.jpg" /></a>	
-    Wilczkowiak et al.
-  </div>
-  <div class="imagebox">
-    <a href="img/car_hays.jpg"><img src="img/car_hays_t.jpg" /></a>
-    Hays et al.
-  </div>
-  <div class="imagebox">
-    <a href="img/gasse_result3.jpg"><img src="img/gasse_result3_t.jpg" /></a>			
-    our result
-  </div>
-</div>
+
+<TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
+<tbody>
+<tr>
+<td><a href="Documentation/images/gasse_inputs.png"><img src="Documentation/images/gasse_inputs_t.png" /></a> input + mask</td>
+<td><a href="Documentation/images/car_criminisi_et_al.png"><img src="Documentation/images/car_criminisi_et_al_t.png" /></a> Criminisi et al.</td>
+<td><a href="Documentation/images/car_ms_smart_erase.png"><img src="Documentation/images/car_ms_smart_erase_t.png" /></a> MS Smart Erase</td>
+</tr>
+<tr>
+<td><a href="Documentation/images/car_wilczkowiak_et_al.png"><img src="Documentation/images/car_wilczkowiak_et_al_t.png" /></a>  Wilczkowiak et al.</td>
+<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays_t.png" /></a> Hays et al.</td>
+<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3_t.png" /></a> Our result</td>
+</tr>
+</tbody>
+</table>
 	
 ## Complexity
 Computing GIST descriptors
