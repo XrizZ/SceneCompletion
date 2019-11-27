@@ -49,8 +49,8 @@ With these improvements, we were able to achieve the following results:
 <TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
 <tbody>
 <tr>
-<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="250" /></a> Hays result</td>
-<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="250" /></a> Our result</td>
+<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="350" /></a> Hays result</td>
+<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="350" /></a> Our result</td>
 </tr>
 </tbody>
 </table>
@@ -108,55 +108,49 @@ On this page, we present our results. We picked some of the good and bad results
 
 In many cases, the algorithm gave us beautiful results that were sometimes hard to distinguish from real photographs. Especially with natural landscapes, the seamless blending combined with the optimized mask really does its job.
 
+### Example 1
 <a href="Documentation/img/IMG_0908.jpg"><img src="Documentation/img/IMG_0908_t.jpg" /></a>
 input<br>
 
-<a href="img/IMG_0908_mask.png"><img src="img/IMG_0908_mask_t.png" /></a>
+<a href="Documentation/img/IMG_0908_mask.png"><img src="Documentation/img/IMG_0908_mask_t.png" /></a>
 mask<br>
 
-<a href="img/results/img_0908/result1.jpg"><img src="img/img_0908_1_t.jpg" /></a>
-<a href="img/results/img_0908/result10.jpg"><img src="img/img_0908_10_t.jpg" /></a>
-<a href="img/results/img_0908/result11.jpg"><img src="img/img_0908_11_t.jpg" /></a>
-	
-<a href="img/white_house.jpg"><img src="img/white_house_t.jpg" /></a>
+<a href="Documentation/img/results/img_0908/result1.jpg"><img src="Documentation/img/img_0908_1_t.jpg" /></a>
+<a href="Documentation/img/results/img_0908/result10.jpg"><img src="Documentation/img/img_0908_10_t.jpg" /></a>
+<a href="Documentation/img/results/img_0908/result11.jpg"><img src="Documentation/img/img_0908_11_t.jpg" /></a>
+
+### Example 2
+<a href="Documentation/img/white_house.jpg"><img src="Documentation/img/white_house_t.jpg" /></a>
 input<br>
-<a href="img/white_house_mask.png"><img src="img/white_house_mask_t.png" /></a>
+<a href="Documentation/img/white_house_mask.png"><img src="Documentation/img/white_house_mask_t.png" /></a>
 mask<br>
 
-<a href="img/white_house_india.jpg"><img src="img/white_house_india_t.jpg" /></a>
-<a href="img/white_house_flood.jpg"><img src="img/white_house_flood_t.jpg" /></a>
-<a href="img/white_house_schilf.jpg"><img src="img/white_house_schilf_t.jpg" /></a>
+<a href="Documentation/img/white_house_india.jpg"><img src="Documentation/img/white_house_india_t.jpg" /></a>
+<a href="Documentation/img/white_house_flood.jpg"><img src="Documentation/img/white_house_flood_t.jpg" /></a>
+<a href="Documentation/img/white_house_schilf.jpg"><img src="Documentation/img/white_house_schilf_t.jpg" /></a>
 
-<a href="img/IMG_6548.jpg"><img src="img/IMG_6548_t.jpg" /></a>
+### Example 3
+<a href="Documentation/img/IMG_6548.jpg"><Documentation/img src="img/IMG_6548_t.jpg" /></a>
 input<br>
 
-<a href="img/IMG_6548_mask.png"><img src="img/IMG_6548_mask_t.png" /></a>
+<a href="Documentation/img/IMG_6548_mask.png"><img src="Documentation/img/IMG_6548_mask_t.png" /></a>
 mask<br>
  
-<a href="img/results/img_6548/result0.jpg"><img src="img/img_6548_0_t.jpg" /></a>
-<a href="img/results/img_6548/result6.jpg"><img src="img/img_6548_6_t.jpg" /></a>
-<a href="img/results/img_6548/result9.jpg"><img src="img/img_6548_9_t.jpg" /></a>
+<a href="Documentation/img/results/img_6548/result0.jpg"><img src="Documentation/img/img_6548_0_t.jpg" /></a>
+<a href="Documentation/img/results/img_6548/result6.jpg"><img src="Documentation/img/img_6548_6_t.jpg" /></a>
+<a href="Documentation/img/results/img_6548/result9.jpg"><img src="Documentation/img/img_6548_9_t.jpg" /></a>
 	
 ## Bad results
 When there are problems merging images, it has mostly to do with semantic errors. Big letters in the sky, a cow on a roof, a creek of water evolving into a stone wall &ndash; the human eye knows that those thing cannot exist. But as long as no semantic validation of the results is happening, those mistakes cannot be avoided. The GIST descriptor is already able to reduce the most serious flaws by only allowing images that have similar distributions of their edges all over the canvas. But the final check if the result really makes sense still remains unsolved.
 	
-<div class="imagegroup">
-  <div class="imagebox">
-    <a href="img/turm_fail.jpg"><img src="img/turm_fail_t.jpg" /></a>
-  </div>
-  <div class="imagebox">
-    <a href="img/results/img_3072-01/result3.jpg"><img src="img/img_3072_3_t.jpg" /></a>
-  </div>
-  <div class="imagebox">
-    <a href="img/results/img_1911/result12.jpg"><img src="img/img_1911_12_t.jpg" /></a>
 
-  </div>
-  <div class="imagebox">
-    <a href="img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="img/static_
-italy_city_outdoor_dsc00992_4_t.jpg" /></a>
+<a href="Documentation/img/turm_fail.jpg"><img src="Documentation/img/turm_fail_t.jpg" /></a>
 
-  </div>
-</div>
+<a href="Documentation/img/results/img_3072-01/result3.jpg"><img src="Documentation/img/img_3072_3_t.jpg" /></a>
+
+<a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/img_1911_12_t.jpg" /></a>
+
+<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><Documentation/img src="img/static_italy_city_outdoor_dsc00992_4_t.jpg" /></a>
 	
 	
 ## Test set
