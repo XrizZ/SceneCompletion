@@ -141,7 +141,7 @@ When there are problems merging images, it has mostly to do with semantic errors
 
 <a href="Documentation/img/turm_fail.jpg"><img src="Documentation/img/turm_fail.jpg" width="400" /></a>
 <a href="Documentation/img/results/img_3072-01/result3.jpg"><img src="Documentation/img/results/img_3072-01/result3.jpg" width="400"/></a>
-<a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/results/img_1911/result12" width="400" /></a>
+<a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/results/img_1911/result12.jpg" width="400" /></a>
 <a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg" width="400" /></a>
 	
 	
@@ -155,14 +155,14 @@ Other methods were proposed to solve the problem of scene completion. Find below
 <TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
 <tbody>
 <tr>
-<td><a href="Documentation/img/gasse_inputs.jpg"><img src="Documentation/img/gasse_inputs.jpg" /></a> input + mask</td>
-<td><a href="Documentation/images/car_criminisi_et_al.png"><img src="Documentation/images/car_criminisi_et_al.png" /></a> Criminisi et al.</td>
-<td><a href="Documentation/images/car_ms_smart_erase.png"><img src="Documentation/images/car_ms_smart_erase.png" /></a> MS Smart Erase</td>
+<td><a href="Documentation/img/gasse_inputs.jpg"><img src="Documentation/img/gasse_inputs.jpg" width="300"/></a> input + mask</td>
+<td><a href="Documentation/images/car_criminisi_et_al.png"><img src="Documentation/images/car_criminisi_et_al.png" width="300"/></a> Criminisi et al.</td>
+<td><a href="Documentation/images/car_ms_smart_erase.png"><img src="Documentation/images/car_ms_smart_erase.png" width="300"/></a> MS Smart Erase</td>
 </tr>
 <tr>
-<td><a href="Documentation/images/car_wilczkowiak_et_al.png"><img src="Documentation/images/car_wilczkowiak_et_al.png" /></a>  Wilczkowiak et al.</td>
-<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" /></a> Hays et al.</td>
-<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" /></a> Our result</td>
+<td><a href="Documentation/images/car_wilczkowiak_et_al.png"><img src="Documentation/images/car_wilczkowiak_et_al.png" width="300"/></a>  Wilczkowiak et al.</td>
+<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" width="300"/></a> Hays et al.</td>
+<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="300"/></a> Our result</td>
 </tr>
 </tbody>
 </table>
