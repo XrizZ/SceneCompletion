@@ -16,22 +16,23 @@ The main goal is to replace image information in a given query image in the area
 image information or creating new versions of the input, the masked area is to be covered by another "appropriate"
 image. 
 
-Figure 1 shows one of the results we produced, for more please refer to the results section below.
+The figure below shows one of the results we produced, for more please refer to the results section below.
+<TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
+<tbody>
+<tr>
+<td><a href="Documentation/images/gasse.png"><img src="Documentation/images/gasse.png" width="250" /></a> Input Image</td>
+<td><a href="Documentation/images/gasse_mask3.png"><img src="Documentation/images/car_hays.png" width="250" /></a> Input Mask</td>
+<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" width="250" /></a> Our result</td>
+</tr>
+</tbody>
+</table>
 
-Figure 2 shows the proposed algorithm
-from a high level view. In order to find suitable candidates for insertion, we look up similar images in a large
-pre-processed image database, but use only descriptors of the images to compare them, rather than the pixel information
-themselves. Due to the massive amount of data being processed, pre-calculation of the almost 1.5M images is inevitable.
+The following figure shows the proposed algorithm from a high level view. In order to find suitable candidates for insertion, we look up similar images in a large pre-processed image database, but use only descriptors of the images to compare them, rather than the pixel information themselves. Due to the massive amount of data being processed, pre-calculation of the almost 1.5M images is inevitable.
 
-<img src="img/overview.png" />
+<img src="Documentation/img/overview.png" />
 Figure 2: High Level Overview of Algorithm
 
-Once a good match for the input image has been found, the paper suggests that the best fit is being calculated. This is done by 
-altering the scale, rotation and translation of the similar image and comparing it with the input image at the mask's position.
-After that the image is aligned properly we can then use a graph cut algorithm to improve 
-the mask in a way that it falls into areas for which the gradients of the two images to be combined are as similar as possible. 
-This will later result in a smooth transition when blending the images. Once the improved mask is available, the input image 
-is merged with the candidate using Poisson blending.
+Once a good match for the input image has been found, the paper suggests that the best fit is being calculated. This is done by altering the scale, rotation and translation of the similar image and comparing it with the input image at the mask's position. After that the image is aligned properly we can then use a graph cut algorithm to improve the mask in a way that it falls into areas for which the gradients of the two images to be combined are as similar as possible. This will later result in a smooth transition when blending the images. Once the improved mask is available, the input image is merged with the candidate using Poisson blending.
 
 # Our Contribution
 
@@ -61,10 +62,9 @@ The software was coded in C++ and extensively uses OpenCV to do image processing
 	
 ## GIST
 
-<div class="imagebox right_side">
-  <img src="img/gist.png" />
-  Figure 1: 6x6 tile Layout of GIST Descriptor
-</div>
+<img src="Documentation/img/gist.png" />
+Figure 1: 6x6 tile Layout of GIST Descriptor
+
 Searching a database of millions of images is quite an effort. On the one hand, hundreds of gigabytes need to be read
 which already takes a lot of time, depending on the medium they are saved on. Also comparing images to one another
 is time-consuming. On the other hand, when looking for images, we are not interested in single pixels being similar or different.
