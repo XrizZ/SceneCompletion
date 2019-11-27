@@ -48,9 +48,9 @@ From Hays et al. method we've made several improvements:
 - suggestion: weighting the GISTs differently
 
 With these improvements, we were able to achieve the following results:
-![Input Image](Documentation/images/gasse.png width="300" "Input Image")
-![Hays result](Documentation/images/car_hays.png width="300" "Our result")
-![Our result](Documentation/images/gasse_result3.png width="300" "Hays result")
+![Input Image](Documentation/images/gasse.png "Input Image")
+![Hays result](Documentation/images/car_hays.png "Our result")
+![Our result](Documentation/images/gasse_result3.png "Hays result")
 	
 ## GIST
 
