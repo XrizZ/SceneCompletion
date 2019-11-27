@@ -127,7 +127,7 @@ input + mask
 <a href="Documentation/img/white_house_schilf.jpg"><img src="Documentation/img/white_house_schilf_t.jpg" /></a>
 
 ### Example 3
-<a href="Documentation/img/IMG_6548.jpg"><Documentation/img src="img/IMG_6548_t.jpg" /></a>
+<a href="Documentation/img/IMG_6548.jpg"><img src="Documentation/img/IMG_6548_t.jpg" /></a>
 <a href="Documentation/img/IMG_6548_mask.png"><img src="Documentation/img/IMG_6548_mask_t.png" /></a><br>
 input + mask
  
@@ -139,10 +139,10 @@ input + mask
 When there are problems merging images, it has mostly to do with semantic errors. Big letters in the sky, a cow on a roof, a creek of water evolving into a stone wall &ndash; the human eye knows that those thing cannot exist. But as long as no semantic validation of the results is happening, those mistakes cannot be avoided. The GIST descriptor is already able to reduce the most serious flaws by only allowing images that have similar distributions of their edges all over the canvas. But the final check if the result really makes sense still remains unsolved.
 	
 
-<a href="Documentation/img/turm_fail.jpg"><img src="Documentation/img/turm_fail_t.jpg" /></a>
-<a href="Documentation/img/results/img_3072-01/result3.jpg"><img src="Documentation/img/img_3072_3_t.jpg" /></a>
-<a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/img_1911_12_t.jpg" /></a>
-<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/static_italy_city_outdoor_dsc00992_4_t.jpg" /></a>
+<a href="Documentation/img/turm_fail.jpg"><img src="Documentation/img/turm_fail_t.jpg" width="400" /></a>
+<a href="Documentation/img/results/img_3072-01/result3.jpg"><img src="Documentation/img/img_3072_3_t.jpg" width="400"/></a>
+<a href="Documentation/img/results/img_1911/result12.jpg"><img src="Documentation/img/img_1911_12_t.jpg" width="400" /></a>
+<a href="Documentation/img/results/static_italy_city_outdoor_dsc00992/result4.jpg"><img src="Documentation/img/static_italy_city_outdoor_dsc00992_4_t.jpg" width="400" /></a>
 	
 	
 ## Test set
@@ -155,14 +155,14 @@ Other methods were proposed to solve the problem of scene completion. Find below
 <TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=NONE BORDER=1>
 <tbody>
 <tr>
-<td><a href="Documentation/images/gasse_inputs.png"><img src="Documentation/images/gasse_inputs_t.png" /></a> input + mask</td>
-<td><a href="Documentation/images/car_criminisi_et_al.png"><img src="Documentation/images/car_criminisi_et_al_t.png" /></a> Criminisi et al.</td>
-<td><a href="Documentation/images/car_ms_smart_erase.png"><img src="Documentation/images/car_ms_smart_erase_t.png" /></a> MS Smart Erase</td>
+<td><a href="Documentation/images/gasse_inputs.png"><img src="Documentation/images/gasse_inputs.png" /></a> input + mask</td>
+<td><a href="Documentation/images/car_criminisi_et_al.png"><img src="Documentation/images/car_criminisi_et_al.png" /></a> Criminisi et al.</td>
+<td><a href="Documentation/images/car_ms_smart_erase.png"><img src="Documentation/images/car_ms_smart_erase.png" /></a> MS Smart Erase</td>
 </tr>
 <tr>
-<td><a href="Documentation/images/car_wilczkowiak_et_al.png"><img src="Documentation/images/car_wilczkowiak_et_al_t.png" /></a>  Wilczkowiak et al.</td>
-<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays_t.png" /></a> Hays et al.</td>
-<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3_t.png" /></a> Our result</td>
+<td><a href="Documentation/images/car_wilczkowiak_et_al.png"><img src="Documentation/images/car_wilczkowiak_et_al.png" /></a>  Wilczkowiak et al.</td>
+<td><a href="Documentation/images/car_hays.png"><img src="Documentation/images/car_hays.png" /></a> Hays et al.</td>
+<td><a href="Documentation/images/gasse_result3.png"><img src="Documentation/images/gasse_result3.png" /></a> Our result</td>
 </tr>
 </tbody>
 </table>
